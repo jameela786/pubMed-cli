@@ -206,7 +206,7 @@ This project was built using the following tools and libraries:
 
 - **Python 3.8+**: Programming language
 - **NCBI E-utilities**: PubMed API for paper retrieval
-- **LLM used in developement**: ChatGPT
+- **LLM used in developement**: ChatGPT (https://chatgpt.com/share/687240d4-bacc-8005-8ac9-3fa8a727f2a7)
 - **Poetry**: Dependency management and packaging
 - **Type hints**: For better code quality and IDE support
 - **Logging**: For debugging and monitoring
