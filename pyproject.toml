@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "get-papers-list"
+version = "0.1.0"
+description = "Python program to fetch research papers from PubMed API and identify pharmaceutical/biotech company affiliations"
+authors = ["User <jameelashaik7799@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_pharma_papers"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+pandas = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.0.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_pharma_papers.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true 
